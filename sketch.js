@@ -73,7 +73,12 @@ function draw() {
 
   if (gameState === play) {
 
-    
+    if (keyCode === 32) {
+
+      arrow.display();
+      arrow.shoot(playerArcher.body.angle);
+
+    }
 
     fill("#FFFF");
     textAlign("center");
